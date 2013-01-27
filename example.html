@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jquery.krazykolor Example</title>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam perspiciatis quidem rem tempora voluptatem qui ad. <span class="target">Recusandae quae deserunt</span> ab tempore atque molestiae reprehenderit distinctio laborum voluptates ea perspiciatis officia.</p>
+
+	<h1>Lorem ipsum dolor sit amet</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt autem totam eveniet molestias omnis amet repellat laborum qui quos voluptatum obcaecati voluptate possimus fugiat esse ipsam consectetur magnam. Eligendi iste.</p>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="jquery.krazykolor.min.js"></script>
+
+	<script type="text/javascript">
+		$('p:first').krazyKolor({
+			colors: ['#3793D1', '#CD2424', '#FBD428'],
+			target: '.target'
+		});
+		$('p:eq(1)').krazyKolor({
+			colors: ['#3793D1', '#CD2424', '#FBD428']
+		});
+		$('h1').krazyKolor({
+			colors: ['#3793D1', '#CD2424', '#FBD428']
+		});
+	</script>
+</body>
+</html>
