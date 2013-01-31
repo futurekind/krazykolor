@@ -28,3 +28,33 @@ Setup
 ```
 3. have fun with the Plugin
   ``` $('h1').krazyKolor(); ```
+  
+Usage
+-----
+* Specify the target with the selector
+```js
+$('h1').krazyKolor();     // The h1-Element becomes colored
+```
+
+* Use your custom colors
+```js
+  $('p').krazyKolor({
+      colors: [
+        '#123456',
+        '#555',
+        'green',
+        '#ff00dd'
+      ]
+ });
+```
+
+* Pass the target with the options
+```html
+ <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="target">Incidunt autem totam</span> 
+ eveniet molestias omnis amet repellat laborum qui quos voluptatum obcaecati voluptate possimus fugiat</p>
+```
+```js
+ $('p').krazyKolor({
+      target: '.target'    // only the selector '.target' will be colored
+ });
+```
